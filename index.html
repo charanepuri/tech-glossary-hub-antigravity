@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Glossary Hub | Interactive Antigravity Showcase</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Interactive physics-based showcase of the Tech Glossary Hub ecosystem across HTML5, React, Django, Angular, and Flask implementations." />
+  <meta name="author" content="Epuri Charan Teja" />
+
+  <!-- Open Graph (OG) Meta Tags -->
+  <meta property="og:title" content="Tech Glossary Hub | Interactive Antigravity Showcase" />
+  <meta property="og:description" content="Explore multi-framework implementations of Tech Glossary Hub with an interactive 2D physics engine." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://charanepuri.github.io/tech-glossary-hub-html/" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tech Glossary Hub | Interactive Antigravity Showcase" />
+  <meta name="twitter:description" content="Explore multi-framework implementations of Tech Glossary Hub with an interactive 2D physics engine." />
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="TGH_AntiGravity_logo.png" type="image/x-icon" />
+</head>
+<body>
+
+  <!-- Background / Viewport Container -->
+  <div id="app-container" class="app-container">
+
+    <!-- Top Navigation -->
+    <header class="header physics-element" data-element-id="header">
+      <div class="brand">
+        <span class="brand-icon">⚡</span>
+        <h1 class="brand-title">Tech Glossary Hub <span class="badge-gravity">Antigravity</span></h1>
+      </div>
+      <div class="header-actions">
+        <button id="trigger-btn" class="btn btn-primary physics-element" data-element-id="trigger-btn">
+          🚀 Trigger Zero Gravity
+        </button>
+        <button id="reset-btn" class="btn btn-secondary hidden" aria-label="Reset Layout">
+          ↺ Reset Layout
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- Central Search & Controls Section -->
+      <section class="search-section" data-element-id="search-section" id="search-section">
+        <div class="search-box-wrapper">
+          <span class="search-icon">🔍</span>
+          <input 
+            type="text" 
+            id="search-input" 
+            class="search-input" 
+            placeholder="Search by title, tag, framework, or concept..." 
+            autocomplete="off"
+          />
+        </div>
+        <div class="category-filters" id="category-filters">
+          <button type="button" class="filter-pill active" data-filter="all">All Stacks</button>
+          <button type="button" class="filter-pill" data-filter="frontend">Frontend</button>
+          <button type="button" class="filter-pill" data-filter="backend">Backend</button>
+          <button type="button" class="filter-pill" data-filter="fullstack">Full Stack</button>
+          <button type="button" class="filter-pill" data-filter="api">APIs</button>
+        </div>
+      </section>
+
+      <!-- Interactive Version Cards Grid -->
+      <section class="cards-grid" id="cards-grid">
+
+        <!-- 1. HTML Version -->
+        <article class="card physics-element" data-element-id="card-html" data-category="frontend">
+          <div class="card-header">
+            <span class="stack-badge badge-html">HTML5 • CSS3 • JS • Bootstrap 5</span>
+            <span class="card-num">01</span>
+          </div>
+          <h2 class="card-title">HTML Version</h2>
+          <p class="card-desc">Lightweight multi-page client-side architecture with Spider-Man-inspired visual theme, semantic HTML, and dynamic JavaScript data rendering.</p>
+          <ul class="card-specs">
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Data &amp; Scale:</strong> 5 Categories (Web Dev, Software Eng, AI/Data, Cyber, Cloud), 15–20 terms each (~80+ terms)</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Term Detail:</strong> Definition, code syntax, and practical example per term</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Architecture:</strong> Multi-page (`/pages/categories.html`, `glossary.html`, `term.html`), iframe previews</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Highlights:</strong> SEO foundation (`sitemap.xml`, `robots.txt`), dark/light theme, accessibility focus</li>
+          </ul>
+          <div class="card-tags">
+            <span class="tech-tag">HTML5 / CSS3</span>
+            <span class="tech-tag">Bootstrap 5</span>
+            <span class="tech-tag">glossary-data.js</span>
+            <span class="tech-tag">Spider-Man UI</span>
+          </div>
+          <div class="card-links">
+            <a href="https://charanepuri.github.io/tech-glossary-hub-html/" target="_blank" rel="noopener noreferrer" class="card-link live-link">
+              <span>Live Demo</span> ↗
+            </a>
+            <a href="https://github.com/charanepuri/tech-glossary-hub-html" target="_blank" rel="noopener noreferrer" class="card-link repo-link">
+              <span>GitHub</span> ↗
+            </a>
+            <a href="https://charanepuri.github.io/tech-glossary-hub-html/assets/TECHGLOSSARYHUBHTML.pdf" target="_blank" rel="noopener noreferrer" class="card-link pdf-link">
+              <span>Docs (PDF)</span> 📄
+            </a>
+          </div>
+          <div class="card-milestones">
+            <span class="milestones-header">📌 LinkedIn Post:</span>
+            <div class="milestones-list">
+              <a href="https://lnkd.in/p/dYVY6fZC" target="_blank" rel="noopener noreferrer" class="milestone-badge launch">
+                Launch Post 🚀
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. React Version -->
+        <article class="card physics-element" data-element-id="card-react" data-category="frontend">
+          <div class="card-header">
+            <span class="stack-badge badge-react">React 19 • Vite 7 • Router 7</span>
+            <span class="card-num">02</span>
+          </div>
+          <h2 class="card-title">React Version</h2>
+          <p class="card-desc">Modern component-driven SPA with Vite 7, React Router 7, default dark aesthetic, and persistent client-side state.</p>
+          <ul class="card-specs">
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Data Architecture:</strong> Modular JSON datasets (10 tech stacks: React, Python, Node, Next, Vue, TS, etc.)</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>State &amp; Context:</strong> `FavoritesContext` with Local Storage persistence &amp; custom filter hooks</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Interactive Features:</strong> Search query pipeline, category filtering, A-Z sorting, and related terms graph</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Routing:</strong> Dynamic `/category/:slug`, `/term/:slug`, `/favorites`, and 404 handling</li>
+          </ul>
+          <div class="card-tags">
+            <span class="tech-tag">React 19</span>
+            <span class="tech-tag">Vite 7</span>
+            <span class="tech-tag">React Router 7</span>
+            <span class="tech-tag">Context API</span>
+            <span class="tech-tag">Local Storage</span>
+          </div>
+          <div class="card-links">
+            <a href="https://tech-glossary-hub-react.vercel.app/" target="_blank" rel="noopener noreferrer" class="card-link live-link">
+              <span>Live Demo</span> ↗
+            </a>
+            <a href="https://github.com/charanepuri/tech-glossary-hub-react" target="_blank" rel="noopener noreferrer" class="card-link repo-link">
+              <span>GitHub</span> ↗
+            </a>
+            <a href="https://tech-glossary-hub-react.vercel.app/Tech_Glossary_Hub_React.pdf" target="_blank" rel="noopener noreferrer" class="card-link pdf-link">
+              <span>Docs (PDF)</span> 📄
+            </a>
+          </div>
+        </article>
+
+        <!-- 3. Django Version -->
+        <article class="card physics-element" data-element-id="card-django" data-category="backend,api">
+          <div class="card-header">
+            <span class="stack-badge badge-django">Django 6.x • Python 3 • REST API</span>
+            <span class="card-num">03</span>
+          </div>
+          <h2 class="card-title">Django Version</h2>
+          <p class="card-desc">Full-stack backend architecture using Django MVT pattern, relational SQLite schema, custom admin management, and REST API.</p>
+          <ul class="card-specs">
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Database Design:</strong> Relational ORM models (`Category` &amp; `GlossaryTerm` with slugs, difficulty, featured flags)</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>API &amp; Endpoints:</strong> Dedicated `api_urls.py`, `api_views.py`, and `serializers.py` REST support</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>UI &amp; Templates:</strong> Template inheritance with Bootstrap 5, Bootstrap Icons, and pagination</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Features:</strong> 45+ terms across 7 categories (Programming, Python, Django, JS, React, DB, DevOps)</li>
+          </ul>
+          <div class="card-tags">
+            <span class="tech-tag">Django MVT</span>
+            <span class="tech-tag">Django ORM</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">SQLite</span>
+            <span class="tech-tag">Admin Panel</span>
+          </div>
+          <div class="card-links">
+            <a href="https://tech-glossary-hub.onrender.com/" target="_blank" rel="noopener noreferrer" class="card-link live-link">
+              <span>Live Demo</span> ↗
+            </a>
+            <a href="https://github.com/charanepuri/tech-glossary-hub" target="_blank" rel="noopener noreferrer" class="card-link repo-link">
+              <span>GitHub</span> ↗
+            </a>
+            <a href="https://drive.google.com/file/d/1r-Ta72GE2tjw4qrWlLgztVnjFiAabhdE/view" target="_blank" rel="noopener noreferrer" class="card-link pdf-link">
+              <span>Docs (PDF)</span> 📄
+            </a>
+          </div>
+          <div class="card-milestones">
+            <span class="milestones-header">📌 LinkedIn Milestones:</span>
+            <div class="milestones-list">
+              <a href="https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-1-activity-7482807386429100034-EJvP" target="_blank" rel="noopener noreferrer" class="milestone-badge">
+                Update 1 ↗
+              </a>
+              <a href="https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-2-activity-7484464550013067264-lKgf" target="_blank" rel="noopener noreferrer" class="milestone-badge">
+                Update 2 ↗
+              </a>
+              <a href="https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-is-now-live-activity-7485551744064749568-i__D" target="_blank" rel="noopener noreferrer" class="milestone-badge launch">
+                Live Launch 🚀
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Angular Version -->
+        <article class="card physics-element" data-element-id="card-angular" data-category="frontend">
+          <div class="card-header">
+            <span class="stack-badge badge-angular">Angular • TypeScript • RxJS</span>
+            <span class="card-num">04</span>
+          </div>
+          <h2 class="card-title">Angular Version</h2>
+          <p class="card-desc">Enterprise-grade single page application leveraging strict TypeScript typing, modular dependency injection, and reactive RxJS streams.</p>
+          <ul class="card-specs">
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Architecture:</strong> Standalone components, reactive routing, and service layer architecture</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Features:</strong> Type-safe glossary models, client-side caching, search observables</li>
+          </ul>
+          <div class="card-tags">
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">RxJS</span>
+            <span class="tech-tag">Vercel</span>
+          </div>
+          <div class="card-links">
+            <a href="https://tech-glossary-hub-angular.vercel.app/home" target="_blank" rel="noopener noreferrer" class="card-link live-link">
+              <span>Live Demo</span> ↗
+            </a>
+            <a href="https://github.com/charanepuri/tech-glossary-hub-angular" target="_blank" rel="noopener noreferrer" class="card-link repo-link">
+              <span>GitHub</span> ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- 5. Flask Version -->
+        <article class="card physics-element" data-element-id="card-flask" data-category="backend,api">
+          <div class="card-header">
+            <span class="stack-badge badge-flask">Flask • REST API • Microservice</span>
+            <span class="card-num">05</span>
+          </div>
+          <h2 class="card-title">Flask Version</h2>
+          <p class="card-desc">Lightweight Python microservices implementation focusing on fast JSON REST endpoints, lightweight routing, and API decoupling.</p>
+          <ul class="card-specs">
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Architecture:</strong> Flask Blueprints, modular API structure, lightweight data models</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Highlights:</strong> Fast JSON payload delivery for glossary search and category queries</li>
+          </ul>
+          <div class="card-tags">
+            <span class="tech-tag">Python Flask</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Microservice</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/charanepuri/tech-glossary-hub-flask" target="_blank" rel="noopener noreferrer" class="card-link repo-link">
+              <span>GitHub</span> ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- 6. Full Stack Version -->
+        <article class="card physics-element" data-element-id="card-fullstack" data-category="fullstack">
+          <div class="card-header">
+            <span class="stack-badge badge-fullstack">Full Stack Architecture</span>
+            <span class="card-num">06</span>
+          </div>
+          <h2 class="card-title">Full Stack Roadmap</h2>
+          <p class="card-desc">Unified multi-tier ecosystem tying frontend SPA clients (React/Angular) to backend services (Django/Flask) with centralized authentication.</p>
+          <ul class="card-specs">
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Vision:</strong> Shared schema contracts, cross-platform search index, and cloud CI/CD</li>
+          </ul>
+          <div class="card-tags">
+            <span class="tech-tag">Microservices</span>
+            <span class="tech-tag">Unified Auth</span>
+            <span class="tech-tag">Cloud CI/CD</span>
+          </div>
+          <div class="card-links">
+            <span class="status-pill">Roadmap / Planned</span>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- Footer -->
+      <footer class="app-footer physics-element" data-element-id="app-footer">
+        <p class="footer-text">
+          Made with ❤️ || <strong>Epuri Charan Teja</strong>
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/charanepuri" target="_blank" rel="noopener noreferrer" class="footer-link">
+            GitHub ↗
+          </a>
+          <span class="footer-divider">•</span>
+          <a href="https://charan-react-portfolio.vercel.app" target="_blank" rel="noopener noreferrer" class="footer-link">
+            Portfolio ↗
+          </a>
+          <span class="footer-divider">•</span>
+          <a href="https://www.linkedin.com/in/charan-teja-972aa9231" target="_blank" rel="noopener noreferrer" class="footer-link">
+            LinkedIn ↗
+          </a>
+        </div>
+      </footer>
+    </main>
+
+  </div>
+
+  <!-- Matter.js Physics Engine CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
+
