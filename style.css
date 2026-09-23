@@ -110,7 +110,16 @@ body {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
+}
+
+.brand-logo-img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  border-radius: 8px;
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.4));
+  pointer-events: none;
 }
 
 .brand-icon {
@@ -287,6 +296,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.card-header-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-logo-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 6px;
+  pointer-events: none;
 }
 
 .stack-badge {
