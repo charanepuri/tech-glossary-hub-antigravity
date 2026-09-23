@@ -38,7 +38,8 @@ html, body {
   background-color: var(--bg-color);
   color: var(--text-main);
   font-family: var(--font-family);
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.55;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -118,7 +119,7 @@ body {
 }
 
 .brand-title {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   display: flex;
@@ -128,11 +129,11 @@ body {
 }
 
 .badge-gravity {
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  padding: 3px 8px;
+  padding: 3px 9px;
   background: rgba(56, 189, 248, 0.15);
   color: var(--accent-primary);
   border: 1px solid rgba(56, 189, 248, 0.3);
@@ -210,7 +211,7 @@ body {
   border: 1px solid var(--surface-border);
   border-radius: var(--radius-md);
   color: var(--text-main);
-  font-size: 0.98rem;
+  font-size: 1.05rem;
   font-family: inherit;
   outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
@@ -234,9 +235,9 @@ body {
 
 .filter-pill {
   font-family: inherit;
-  font-size: 0.8rem;
+  font-size: 0.86rem;
   font-weight: 500;
-  padding: 5px 14px;
+  padding: 6px 15px;
   background: rgba(51, 65, 85, 0.4);
   border: 1px solid var(--surface-border);
   border-radius: 999px;
@@ -289,9 +290,9 @@ body {
 }
 
 .stack-badge {
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 600;
-  padding: 3px 10px;
+  padding: 4px 11px;
   border-radius: 6px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -305,22 +306,33 @@ body {
 .badge-fullstack { background: rgba(234, 179, 8, 0.15); color: var(--badge-fullstack); border: 1px solid rgba(234, 179, 8, 0.3); }
 
 .card-num {
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   font-weight: 700;
   color: var(--text-muted);
   opacity: 0.6;
 }
 
 .card-title {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #ffffff;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.version-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent-primary);
+  opacity: 0.9;
 }
 
 .card-desc {
-  font-size: 0.86rem;
+  font-size: 0.94rem;
   color: var(--text-muted);
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 /* Card Technical Specs & Features */
@@ -328,17 +340,17 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 7px;
   margin: 4px 0;
-  font-size: 0.81rem;
+  font-size: 0.88rem;
 }
 
 .spec-item {
   display: flex;
   align-items: flex-start;
-  gap: 6px;
+  gap: 7px;
   color: #cbd5e1;
-  line-height: 1.35;
+  line-height: 1.42;
 }
 
 .spec-bullet {
@@ -355,9 +367,9 @@ body {
 }
 
 .tech-tag {
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 500;
-  padding: 2px 7px;
+  padding: 3px 8px;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -377,11 +389,11 @@ body {
 .card-link {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  font-size: 0.82rem;
+  gap: 5px;
+  font-size: 0.88rem;
   font-weight: 600;
   text-decoration: none;
-  padding: 6px 12px;
+  padding: 7px 13px;
   border-radius: var(--radius-sm);
   transition: all 0.2s ease;
   cursor: pointer;
@@ -433,7 +445,7 @@ body {
 }
 
 .milestones-header {
-  font-size: 0.74rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: var(--text-muted);
   text-transform: uppercase;
@@ -453,10 +465,10 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-size: 0.73rem;
+  font-size: 0.78rem;
   font-weight: 500;
   text-decoration: none;
-  padding: 3px 8px;
+  padding: 4px 9px;
   border-radius: 4px;
   background: rgba(10, 102, 194, 0.15);
   color: #93c5fd;
@@ -490,10 +502,10 @@ body {
 }
 
 .status-pill {
-  font-size: 0.78rem;
+  font-size: 0.84rem;
   font-weight: 600;
   color: #fbbf24;
-  padding: 5px 12px;
+  padding: 6px 14px;
   background: rgba(251, 191, 36, 0.1);
   border: 1px solid rgba(251, 191, 36, 0.3);
   border-radius: var(--radius-sm);
@@ -503,20 +515,20 @@ body {
 .app-footer {
   background: rgba(30, 41, 59, 0.7);
   border: 1px solid var(--surface-border);
-  padding: 16px 24px;
+  padding: 18px 24px;
   border-radius: var(--radius-lg);
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
   text-align: center;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .footer-text {
-  font-size: 0.9rem;
+  font-size: 0.98rem;
   color: var(--text-main);
   font-weight: 500;
 }
@@ -531,13 +543,13 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 14px;
 }
 
 .footer-link {
   color: #93c5fd;
   text-decoration: none;
-  font-size: 0.83rem;
+  font-size: 0.9rem;
   font-weight: 500;
   transition: all 0.2s ease;
   pointer-events: auto !important;

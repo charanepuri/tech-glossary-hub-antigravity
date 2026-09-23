@@ -75,94 +75,19 @@
       <!-- Interactive Version Cards Grid -->
       <section class="cards-grid" id="cards-grid">
 
-        <!-- 1. HTML Version -->
-        <article class="card physics-element" data-element-id="card-html" data-category="frontend">
-          <div class="card-header">
-            <span class="stack-badge badge-html">HTML5 • CSS3 • JS • Bootstrap 5</span>
-            <span class="card-num">01</span>
-          </div>
-          <h2 class="card-title">HTML Version</h2>
-          <p class="card-desc">Lightweight multi-page client-side architecture with Spider-Man-inspired visual theme, semantic HTML, and dynamic JavaScript data rendering.</p>
-          <ul class="card-specs">
-            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Data &amp; Scale:</strong> 5 Categories (Web Dev, Software Eng, AI/Data, Cyber, Cloud), 15–20 terms each (~80+ terms)</li>
-            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Term Detail:</strong> Definition, code syntax, and practical example per term</li>
-            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Architecture:</strong> Multi-page (`/pages/categories.html`, `glossary.html`, `term.html`), iframe previews</li>
-            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Highlights:</strong> SEO foundation (`sitemap.xml`, `robots.txt`), dark/light theme, accessibility focus</li>
-          </ul>
-          <div class="card-tags">
-            <span class="tech-tag">HTML5 / CSS3</span>
-            <span class="tech-tag">Bootstrap 5</span>
-            <span class="tech-tag">glossary-data.js</span>
-            <span class="tech-tag">Spider-Man UI</span>
-          </div>
-          <div class="card-links">
-            <a href="https://charanepuri.github.io/tech-glossary-hub-html/" target="_blank" rel="noopener noreferrer" class="card-link live-link">
-              <span>Live Demo</span> ↗
-            </a>
-            <a href="https://github.com/charanepuri/tech-glossary-hub-html" target="_blank" rel="noopener noreferrer" class="card-link repo-link">
-              <span>GitHub</span> ↗
-            </a>
-            <a href="https://charanepuri.github.io/tech-glossary-hub-html/assets/TECHGLOSSARYHUBHTML.pdf" target="_blank" rel="noopener noreferrer" class="card-link pdf-link">
-              <span>Docs (PDF)</span> 📄
-            </a>
-          </div>
-          <div class="card-milestones">
-            <span class="milestones-header">📌 LinkedIn Post:</span>
-            <div class="milestones-list">
-              <a href="https://lnkd.in/p/dYVY6fZC" target="_blank" rel="noopener noreferrer" class="milestone-badge launch">
-                Launch Post 🚀
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- 2. React Version -->
-        <article class="card physics-element" data-element-id="card-react" data-category="frontend">
-          <div class="card-header">
-            <span class="stack-badge badge-react">React 19 • Vite 7 • Router 7</span>
-            <span class="card-num">02</span>
-          </div>
-          <h2 class="card-title">React Version</h2>
-          <p class="card-desc">Modern component-driven SPA with Vite 7, React Router 7, default dark aesthetic, and persistent client-side state.</p>
-          <ul class="card-specs">
-            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Data Architecture:</strong> Modular JSON datasets (10 tech stacks: React, Python, Node, Next, Vue, TS, etc.)</li>
-            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>State &amp; Context:</strong> `FavoritesContext` with Local Storage persistence &amp; custom filter hooks</li>
-            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Interactive Features:</strong> Search query pipeline, category filtering, A-Z sorting, and related terms graph</li>
-            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Routing:</strong> Dynamic `/category/:slug`, `/term/:slug`, `/favorites`, and 404 handling</li>
-          </ul>
-          <div class="card-tags">
-            <span class="tech-tag">React 19</span>
-            <span class="tech-tag">Vite 7</span>
-            <span class="tech-tag">React Router 7</span>
-            <span class="tech-tag">Context API</span>
-            <span class="tech-tag">Local Storage</span>
-          </div>
-          <div class="card-links">
-            <a href="https://tech-glossary-hub-react.vercel.app/" target="_blank" rel="noopener noreferrer" class="card-link live-link">
-              <span>Live Demo</span> ↗
-            </a>
-            <a href="https://github.com/charanepuri/tech-glossary-hub-react" target="_blank" rel="noopener noreferrer" class="card-link repo-link">
-              <span>GitHub</span> ↗
-            </a>
-            <a href="https://tech-glossary-hub-react.vercel.app/Tech_Glossary_Hub_React.pdf" target="_blank" rel="noopener noreferrer" class="card-link pdf-link">
-              <span>Docs (PDF)</span> 📄
-            </a>
-          </div>
-        </article>
-
-        <!-- 3. Django Version -->
+        <!-- 1. Django Version (Main Version) -->
         <article class="card physics-element" data-element-id="card-django" data-category="backend,api">
           <div class="card-header">
-            <span class="stack-badge badge-django">Django 6.x • Python 3 • REST API</span>
-            <span class="card-num">03</span>
+            <span class="stack-badge badge-django">Django 6.x • Main Version</span>
+            <span class="card-num">01</span>
           </div>
-          <h2 class="card-title">Django Version</h2>
+          <h2 class="card-title">Django Version <span class="version-label">— Main Version</span></h2>
           <p class="card-desc">Full-stack backend architecture using Django MVT pattern, relational SQLite schema, custom admin management, and REST API.</p>
           <ul class="card-specs">
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Data &amp; Scale:</strong> 7 Categories • 45 Terms</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Categories (7):</strong> Database, DevOps, Django, JavaScript, Programming, Python, React</li>
             <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Database Design:</strong> Relational ORM models (`Category` &amp; `GlossaryTerm` with slugs, difficulty, featured flags)</li>
-            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>API &amp; Endpoints:</strong> Dedicated `api_urls.py`, `api_views.py`, and `serializers.py` REST support</li>
-            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>UI &amp; Templates:</strong> Template inheritance with Bootstrap 5, Bootstrap Icons, and pagination</li>
-            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Features:</strong> 45+ terms across 7 categories (Programming, Python, Django, JS, React, DB, DevOps)</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>API &amp; UI:</strong> Dedicated `api_urls.py`, `api_views.py`, `serializers.py` REST support, and Bootstrap 5 templates</li>
           </ul>
           <div class="card-tags">
             <span class="tech-tag">Django MVT</span>
@@ -170,6 +95,8 @@
             <span class="tech-tag">REST API</span>
             <span class="tech-tag">SQLite</span>
             <span class="tech-tag">Admin Panel</span>
+            <span class="tech-tag">7 Categories</span>
+            <span class="tech-tag">45 Terms</span>
           </div>
           <div class="card-links">
             <a href="https://tech-glossary-hub.onrender.com/" target="_blank" rel="noopener noreferrer" class="card-link live-link">
@@ -198,23 +125,105 @@
           </div>
         </article>
 
-        <!-- 4. Angular Version -->
+        <!-- 2. HTML Version (2nd Version) -->
+        <article class="card physics-element" data-element-id="card-html" data-category="frontend">
+          <div class="card-header">
+            <span class="stack-badge badge-html">HTML5 • CSS3 • JS • 2nd Version</span>
+            <span class="card-num">02</span>
+          </div>
+          <h2 class="card-title">HTML Version <span class="version-label">— 2nd Version</span></h2>
+          <p class="card-desc">Lightweight multi-page client-side architecture with Spider-Man-inspired visual theme, semantic HTML, and dynamic JavaScript data rendering.</p>
+          <ul class="card-specs">
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Data &amp; Scale:</strong> 5 Categories • 100 Terms</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Categories (5):</strong> Web Development &amp; Design, Software Engineering, Data Science &amp; AI, Cybersecurity, Cloud &amp; Networking</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Term Detail:</strong> Definition, code syntax, and practical examples for each term</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Highlights:</strong> SEO foundation (`sitemap.xml`, `robots.txt`), dark/light theme, accessibility focus</li>
+          </ul>
+          <div class="card-tags">
+            <span class="tech-tag">HTML5 / CSS3</span>
+            <span class="tech-tag">Bootstrap 5</span>
+            <span class="tech-tag">glossary-data.js</span>
+            <span class="tech-tag">Spider-Man UI</span>
+            <span class="tech-tag">5 Categories</span>
+            <span class="tech-tag">100 Terms</span>
+          </div>
+          <div class="card-links">
+            <a href="https://charanepuri.github.io/tech-glossary-hub-html/" target="_blank" rel="noopener noreferrer" class="card-link live-link">
+              <span>Live Demo</span> ↗
+            </a>
+            <a href="https://github.com/charanepuri/tech-glossary-hub-html" target="_blank" rel="noopener noreferrer" class="card-link repo-link">
+              <span>GitHub</span> ↗
+            </a>
+            <a href="https://charanepuri.github.io/tech-glossary-hub-html/assets/TECHGLOSSARYHUBHTML.pdf" target="_blank" rel="noopener noreferrer" class="card-link pdf-link">
+              <span>Docs (PDF)</span> 📄
+            </a>
+          </div>
+          <div class="card-milestones">
+            <span class="milestones-header">📌 LinkedIn Post:</span>
+            <div class="milestones-list">
+              <a href="https://lnkd.in/p/dYVY6fZC" target="_blank" rel="noopener noreferrer" class="milestone-badge launch">
+                Launch Post 🚀
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. React Version (3rd Version) -->
+        <article class="card physics-element" data-element-id="card-react" data-category="frontend">
+          <div class="card-header">
+            <span class="stack-badge badge-react">React 19 • Vite 7 • 3rd Version</span>
+            <span class="card-num">03</span>
+          </div>
+          <h2 class="card-title">React Version <span class="version-label">— 3rd Version</span></h2>
+          <p class="card-desc">Modern component-driven SPA with Vite 7, React Router 7, default dark aesthetic, and persistent client-side state.</p>
+          <ul class="card-specs">
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Data &amp; Scale:</strong> 10 Categories • 250 Terms</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Categories (10):</strong> HTML, CSS, JavaScript, React JS, TypeScript, Python, Node JS, Vue JS, Next JS, Tailwind CSS</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>State &amp; Context:</strong> `FavoritesContext` with Local Storage persistence &amp; custom filter hooks</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Interactive Features:</strong> Search query pipeline, category filtering, A-Z sorting, and related terms graph</li>
+          </ul>
+          <div class="card-tags">
+            <span class="tech-tag">React 19</span>
+            <span class="tech-tag">Vite 7</span>
+            <span class="tech-tag">React Router 7</span>
+            <span class="tech-tag">Context API</span>
+            <span class="tech-tag">Local Storage</span>
+            <span class="tech-tag">10 Categories</span>
+            <span class="tech-tag">250 Terms</span>
+          </div>
+          <div class="card-links">
+            <a href="https://tech-glossary-hub-react.vercel.app/" target="_blank" rel="noopener noreferrer" class="card-link live-link">
+              <span>Live Demo</span> ↗
+            </a>
+            <a href="https://github.com/charanepuri/tech-glossary-hub-react" target="_blank" rel="noopener noreferrer" class="card-link repo-link">
+              <span>GitHub</span> ↗
+            </a>
+            <a href="https://tech-glossary-hub-react.vercel.app/Tech_Glossary_Hub_React.pdf" target="_blank" rel="noopener noreferrer" class="card-link pdf-link">
+              <span>Docs (PDF)</span> 📄
+            </a>
+          </div>
+        </article>
+
+        <!-- 4. Angular Version (4th Version) -->
         <article class="card physics-element" data-element-id="card-angular" data-category="frontend">
           <div class="card-header">
-            <span class="stack-badge badge-angular">Angular • TypeScript • RxJS</span>
+            <span class="stack-badge badge-angular">Angular • TypeScript • 4th Version</span>
             <span class="card-num">04</span>
           </div>
-          <h2 class="card-title">Angular Version</h2>
+          <h2 class="card-title">Angular Version <span class="version-label">— 4th Version</span></h2>
           <p class="card-desc">Enterprise-grade single page application leveraging strict TypeScript typing, modular dependency injection, and reactive RxJS streams.</p>
           <ul class="card-specs">
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Data &amp; Scale:</strong> 12 Categories • 240 Terms</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Categories (12):</strong> Angular Fundamentals, Components &amp; Templates, Signals &amp; Reactivity, Routing &amp; Navigation, Services &amp; Dependency Injection, Forms &amp; User Input, HTTP &amp; API Integration, State Management, Angular Architecture, TypeScript for Angular, Angular Performance, Testing &amp; Deployment</li>
             <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Architecture:</strong> Standalone components, reactive routing, and service layer architecture</li>
-            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Features:</strong> Type-safe glossary models, client-side caching, search observables</li>
           </ul>
           <div class="card-tags">
             <span class="tech-tag">Angular</span>
             <span class="tech-tag">TypeScript</span>
             <span class="tech-tag">RxJS</span>
-            <span class="tech-tag">Vercel</span>
+            <span class="tech-tag">Signals</span>
+            <span class="tech-tag">12 Categories</span>
+            <span class="tech-tag">240 Terms</span>
           </div>
           <div class="card-links">
             <a href="https://tech-glossary-hub-angular.vercel.app/home" target="_blank" rel="noopener noreferrer" class="card-link live-link">
@@ -226,22 +235,26 @@
           </div>
         </article>
 
-        <!-- 5. Flask Version -->
+        <!-- 5. Flask Version (5th Version) -->
         <article class="card physics-element" data-element-id="card-flask" data-category="backend,api">
           <div class="card-header">
-            <span class="stack-badge badge-flask">Flask • REST API • Microservice</span>
+            <span class="stack-badge badge-flask">Flask • REST API • 5th Version</span>
             <span class="card-num">05</span>
           </div>
-          <h2 class="card-title">Flask Version</h2>
-          <p class="card-desc">Lightweight Python microservices implementation focusing on fast JSON REST endpoints, lightweight routing, and API decoupling.</p>
+          <h2 class="card-title">Flask Version <span class="version-label">— 5th Version</span></h2>
+          <p class="card-desc">Lightweight Python microservices implementation focusing on fast JSON REST endpoints, modular Blueprints, and API decoupling.</p>
           <ul class="card-specs">
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Data &amp; Scale:</strong> 12 Categories • 250 Terms</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Categories (12):</strong> Flask &amp; Microframeworks, REST APIs, Backend Architecture, Web Authentication, Databases &amp; ORM, Web Security, Web Performance, Testing &amp; Debugging, Background Processing, Web Deployment, Software Architecture, Python Web Ecosystem</li>
             <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Architecture:</strong> Flask Blueprints, modular API structure, lightweight data models</li>
-            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Highlights:</strong> Fast JSON payload delivery for glossary search and category queries</li>
           </ul>
           <div class="card-tags">
             <span class="tech-tag">Python Flask</span>
             <span class="tech-tag">REST API</span>
             <span class="tech-tag">Microservice</span>
+            <span class="tech-tag">ORM</span>
+            <span class="tech-tag">12 Categories</span>
+            <span class="tech-tag">250 Terms</span>
           </div>
           <div class="card-links">
             <a href="https://github.com/charanepuri/tech-glossary-hub-flask" target="_blank" rel="noopener noreferrer" class="card-link repo-link">
@@ -250,21 +263,25 @@
           </div>
         </article>
 
-        <!-- 6. Full Stack Version -->
+        <!-- 6. Full Stack Version (6th Version) -->
         <article class="card physics-element" data-element-id="card-fullstack" data-category="fullstack">
           <div class="card-header">
-            <span class="stack-badge badge-fullstack">Full Stack Architecture</span>
+            <span class="stack-badge badge-fullstack">Full Stack • 6th Version</span>
             <span class="card-num">06</span>
           </div>
-          <h2 class="card-title">Full Stack Roadmap</h2>
+          <h2 class="card-title">Full Stack Version <span class="version-label">— 6th Version</span></h2>
           <p class="card-desc">Unified multi-tier ecosystem tying frontend SPA clients (React/Angular) to backend services (Django/Flask) with centralized authentication.</p>
           <ul class="card-specs">
-            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Vision:</strong> Shared schema contracts, cross-platform search index, and cloud CI/CD</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Data &amp; Scale:</strong> 15 Categories • 300 Terms</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Categories (15):</strong> Web Development Fundamentals, Frontend Web Development, React JS, Angular, Django, Flask, Backend Development, REST APIs &amp; API Integration, Databases &amp; Data Management, ORM &amp; Database Integration, Authentication &amp; Web Security, Git &amp; Version Control, DevOps &amp; Deployment, Cloud &amp; Web Infrastructure, Full Stack Architecture &amp; Best Practices</li>
+            <li class="spec-item"><span class="spec-bullet">▸</span> <strong>Architecture:</strong> Micro-frontends, API gateways, distributed persistence, caching, and CI/CD pipelines</li>
           </ul>
           <div class="card-tags">
             <span class="tech-tag">Microservices</span>
             <span class="tech-tag">Unified Auth</span>
             <span class="tech-tag">Cloud CI/CD</span>
+            <span class="tech-tag">15 Categories</span>
+            <span class="tech-tag">300 Terms</span>
           </div>
           <div class="card-links">
             <span class="status-pill">Roadmap / Planned</span>
